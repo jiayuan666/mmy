@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.zjy.mmy.controller.OrderControllerTest" time="0.637" tests="4" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\IdeaProjects\mmy\target\test-classes;D:\IdeaProjects\mmy\target\classes;D:\Maven\maven_repository\junit\junit\4.12\junit-4.12.jar;D:\Maven\maven_repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\Maven\maven_repository\org\projectlombok\lombok\1.16.22\lombok-1.16.22.jar;D:\Maven\maven_repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar;D:\Maven\maven_repository\org\springframework\spring-core\5.1.6.RELEASE\spring-core-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-jcl\5.1.6.RELEASE\spring-jcl-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-beans\5.1.6.RELEASE\spring-beans-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-context\5.1.6.RELEASE\spring-context-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-expression\5.1.6.RELEASE\spring-expression-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-context-support\5.1.6.RELEASE\spring-context-support-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-web\5.1.6.RELEASE\spring-web-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-test\5.1.6.RELEASE\spring-test-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-webmvc\5.1.6.RELEASE\spring-webmvc-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-tx\5.1.6.RELEASE\spring-tx-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-jdbc\5.1.6.RELEASE\spring-jdbc-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-aop\5.1.6.RELEASE\spring-aop-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-aspects\5.1.6.RELEASE\spring-aspects-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\aspectj\aspectjweaver\1.9.2\aspectjweaver-1.9.2.jar;D:\Maven\maven_repository\org\mybatis\mybatis\3.5.0\mybatis-3.5.0.jar;D:\Maven\maven_repository\org\mybatis\mybatis-spring\2.0.1\mybatis-spring-2.0.1.jar;D:\Maven\maven_repository\mysql\mysql-connector-java\8.0.15\mysql-connector-java-8.0.15.jar;D:\Maven\maven_repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;D:\Maven\maven_repository\com\alibaba\druid\1.1.16\druid-1.1.16.jar;D:\Maven\maven_repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\Maven\maven_repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;D:\Maven\maven_repository\org\slf4j\slf4j-log4j12\1.7.26\slf4j-log4j12-1.7.26.jar;D:\Maven\maven_repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\Maven\maven_repository\commons-fileupload\commons-fileupload\1.2.2\commons-fileupload-1.2.2.jar;D:\Maven\maven_repository\commons-io\commons-io\2.4\commons-io-2.4.jar;D:\Maven\maven_repository\com\fasterxml\jackson\core\jackson-databind\2.9.9\jackson-databind-2.9.9.jar;D:\Maven\maven_repository\com\fasterxml\jackson\core\jackson-core\2.9.9\jackson-core-2.9.9.jar;D:\Maven\maven_repository\com\fasterxml\jackson\core\jackson-annotations\2.9.9\jackson-annotations-2.9.9.jar;D:\Maven\maven_repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;D:\Maven\maven_repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;D:\Maven\maven_repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;D:\Maven\maven_repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;D:\Maven\maven_repository\javax\servlet\jstl\1.2\jstl-1.2.jar;D:\Maven\maven_repository\redis\clients\jedis\2.9.0\jedis-2.9.0.jar;D:\Maven\maven_repository\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;D:\Maven\maven_repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Lenovo\AppData\Local\Temp\surefire7855202229726416220\surefirebooter6892561571969104714.jar C:\Users\Lenovo\AppData\Local\Temp\surefire7855202229726416220 2019-07-10T21-35-17_359-jvmRun1 surefire5356967315001714124tmp surefire_06936903419231423131tmp"/>
+    <property name="surefire.test.class.path" value="D:\IdeaProjects\mmy\target\test-classes;D:\IdeaProjects\mmy\target\classes;D:\Maven\maven_repository\junit\junit\4.12\junit-4.12.jar;D:\Maven\maven_repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\Maven\maven_repository\org\projectlombok\lombok\1.16.22\lombok-1.16.22.jar;D:\Maven\maven_repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar;D:\Maven\maven_repository\org\springframework\spring-core\5.1.6.RELEASE\spring-core-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-jcl\5.1.6.RELEASE\spring-jcl-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-beans\5.1.6.RELEASE\spring-beans-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-context\5.1.6.RELEASE\spring-context-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-expression\5.1.6.RELEASE\spring-expression-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-context-support\5.1.6.RELEASE\spring-context-support-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-web\5.1.6.RELEASE\spring-web-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-test\5.1.6.RELEASE\spring-test-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-webmvc\5.1.6.RELEASE\spring-webmvc-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-tx\5.1.6.RELEASE\spring-tx-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-jdbc\5.1.6.RELEASE\spring-jdbc-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-aop\5.1.6.RELEASE\spring-aop-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\springframework\spring-aspects\5.1.6.RELEASE\spring-aspects-5.1.6.RELEASE.jar;D:\Maven\maven_repository\org\aspectj\aspectjweaver\1.9.2\aspectjweaver-1.9.2.jar;D:\Maven\maven_repository\org\mybatis\mybatis\3.5.0\mybatis-3.5.0.jar;D:\Maven\maven_repository\org\mybatis\mybatis-spring\2.0.1\mybatis-spring-2.0.1.jar;D:\Maven\maven_repository\mysql\mysql-connector-java\8.0.15\mysql-connector-java-8.0.15.jar;D:\Maven\maven_repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;D:\Maven\maven_repository\com\alibaba\druid\1.1.16\druid-1.1.16.jar;D:\Maven\maven_repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\Maven\maven_repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;D:\Maven\maven_repository\org\slf4j\slf4j-log4j12\1.7.26\slf4j-log4j12-1.7.26.jar;D:\Maven\maven_repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\Maven\maven_repository\commons-fileupload\commons-fileupload\1.2.2\commons-fileupload-1.2.2.jar;D:\Maven\maven_repository\commons-io\commons-io\2.4\commons-io-2.4.jar;D:\Maven\maven_repository\com\fasterxml\jackson\core\jackson-databind\2.9.9\jackson-databind-2.9.9.jar;D:\Maven\maven_repository\com\fasterxml\jackson\core\jackson-core\2.9.9\jackson-core-2.9.9.jar;D:\Maven\maven_repository\com\fasterxml\jackson\core\jackson-annotations\2.9.9\jackson-annotations-2.9.9.jar;D:\Maven\maven_repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;D:\Maven\maven_repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;D:\Maven\maven_repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;D:\Maven\maven_repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;D:\Maven\maven_repository\javax\servlet\jstl\1.2\jstl-1.2.jar;D:\Maven\maven_repository\redis\clients\jedis\2.9.0\jedis-2.9.0.jar;D:\Maven\maven_repository\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;D:\Maven\maven_repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Lenovo"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="basedir" value="D:\IdeaProjects\mmy"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Lenovo\AppData\Local\Temp\surefire7855202229726416220\surefirebooter6892561571969104714.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="user.name" value="Lenovo"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\Maven\maven_repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Lenovo\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="user.dir" value="D:\IdeaProjects\mmy"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="idea.version2019.1.3" value="true"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Lenovo\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;D:\Program Files\Microsoft VS Code\bin;D:\Server\php7;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;d:\Program Files\Git\cmd;C:\Program Files\nodejs\;D:\apache-maven-3.5.2\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Python\Python37-32\Scripts\;D:\Python\Python37-32\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Lenovo\AppData\Roaming\npm;;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="D:\Maven\maven_repository"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="addTest" classname="com.zjy.mmy.controller.OrderControllerTest" time="0.203">
+    <error message="Request processing failed; nested exception is java.lang.RuntimeException: good doesn&apos;t exist" type="org.springframework.web.util.NestedServletException">org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.RuntimeException: good doesn't exist
+	at com.zjy.mmy.controller.OrderControllerTest.addTest(OrderControllerTest.java:55)
+Caused by: java.lang.RuntimeException: good doesn't exist
+	at com.zjy.mmy.controller.OrderControllerTest.addTest(OrderControllerTest.java:55)
+</error>
+    <system-out><![CDATA[2019-07-10 21:35:22,397 [org.springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:248)]-[INFO] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-10 21:35:22,400 [org.springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:177)]-[INFO] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5aae8eb5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@76954a33, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@24a298a6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@982bb90, org.springframework.test.context.transaction.TransactionalTestExecutionListener@27f74733, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7bef452c]
+2019-07-10 21:35:22,423 [org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:107)]-[INFO] Began transaction (1) for test context [DefaultTestContext@57fae983 testClass = OrderControllerTest, testInstance = com.zjy.mmy.controller.OrderControllerTest@4a29f290, testMethod = addTest@OrderControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4bee18dc testClass = OrderControllerTest, locations = '{classpath*:spring/*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@3f3ddbd9]; rollback [true]
+2019-07-10 21:35:22,424 [org.springframework.mock.web.MockServletContext.log(MockServletContext.java:444)]-[INFO] Initializing Spring TestDispatcherServlet ''
+2019-07-10 21:35:22,424 [org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:524)]-[INFO] Initializing Servlet ''
+2019-07-10 21:35:22,426 [org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:546)]-[INFO] Completed initialization in 1 ms
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2787de58]
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@3e134896] will be managed by Spring
+==>  Preparing: select * from good where good_id=? 
+==> Parameters: 15(Integer)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2787de58]
+2019-07-10 21:35:22,546 [com.zjy.mmy.service.impl.OrderServiceImpl.add(OrderServiceImpl.java:35)]-[WARN] good doesn't exist
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2787de58]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2787de58]
+2019-07-10 21:35:22,577 [org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:139)]-[INFO] Rolled back transaction for test: [DefaultTestContext@57fae983 testClass = OrderControllerTest, testInstance = com.zjy.mmy.controller.OrderControllerTest@4a29f290, testMethod = addTest@OrderControllerTest, testException = org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.RuntimeException: good doesn't exist, mergedContextConfiguration = [WebMergedContextConfiguration@4bee18dc testClass = OrderControllerTest, locations = '{classpath*:spring/*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+]]></system-out>
+  </testcase>
+  <testcase name="getByIDTest" classname="com.zjy.mmy.controller.OrderControllerTest" time="0.27">
+    <error message="Request processing failed; nested exception is org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column &apos;finished_date&apos; from result set.  Cause: java.sql.SQLException: Zero date value prohibited&#10;; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited" type="org.springframework.web.util.NestedServletException">org.springframework.web.util.NestedServletException: 
+Request processing failed; nested exception is org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByIDTest(OrderControllerTest.java:95)
+Caused by: org.springframework.dao.TransientDataAccessResourceException: 
+Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByIDTest(OrderControllerTest.java:95)
+Caused by: java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByIDTest(OrderControllerTest.java:95)
+Caused by: com.mysql.cj.exceptions.DataReadException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByIDTest(OrderControllerTest.java:95)
+</error>
+    <system-out><![CDATA[2019-07-10 21:35:22,670 [org.springframework.mock.web.MockServletContext.log(MockServletContext.java:444)]-[INFO] Initializing Spring TestDispatcherServlet ''
+2019-07-10 21:35:22,671 [org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:524)]-[INFO] Initializing Servlet ''
+2019-07-10 21:35:22,673 [org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:546)]-[INFO] Completed initialization in 2 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c98a6d5] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@3e134896] will not be managed by Spring
+==>  Preparing: select * from `order` where order_id=? 
+==> Parameters: 2(Integer)
+<==    Columns: order_id, user_id, good_id, order_state, created_date, trade, addr, finished_date
+<==        Row: 2, 16, 179, ACCEPTED, 2019-05-16 09:26:15, 自提, 晋邦省辽河市诀快诗路1322号楔酱小区19单元1051室, 0000-00-00 00:00:00
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c98a6d5]
+]]></system-out>
+  </testcase>
+  <testcase name="updateTest" classname="com.zjy.mmy.controller.OrderControllerTest" time="0.118">
+    <error message="Request processing failed; nested exception is org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column &apos;finished_date&apos; from result set.  Cause: java.sql.SQLException: Zero date value prohibited&#10;; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited" type="org.springframework.web.util.NestedServletException">org.springframework.web.util.NestedServletException: 
+Request processing failed; nested exception is org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.updateTest(OrderControllerTest.java:79)
+Caused by: org.springframework.dao.TransientDataAccessResourceException: 
+Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.updateTest(OrderControllerTest.java:79)
+Caused by: java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.updateTest(OrderControllerTest.java:79)
+Caused by: com.mysql.cj.exceptions.DataReadException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.updateTest(OrderControllerTest.java:79)
+</error>
+    <system-out><![CDATA[2019-07-10 21:35:22,952 [org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:107)]-[INFO] Began transaction (1) for test context [DefaultTestContext@57fae983 testClass = OrderControllerTest, testInstance = com.zjy.mmy.controller.OrderControllerTest@5e4fa1da, testMethod = updateTest@OrderControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4bee18dc testClass = OrderControllerTest, locations = '{classpath*:spring/*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@3f3ddbd9]; rollback [true]
+2019-07-10 21:35:22,953 [org.springframework.mock.web.MockServletContext.log(MockServletContext.java:444)]-[INFO] Initializing Spring TestDispatcherServlet ''
+2019-07-10 21:35:22,953 [org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:524)]-[INFO] Initializing Servlet ''
+2019-07-10 21:35:22,957 [org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:546)]-[INFO] Completed initialization in 4 ms
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31da6b2e]
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@3e134896] will be managed by Spring
+==>  Preparing: select * from `order` where order_id=? 
+==> Parameters: 5(Integer)
+<==    Columns: order_id, user_id, good_id, order_state, created_date, trade, addr, finished_date
+<==        Row: 5, 13, 197, CANCELED_BY_C, 2019-06-03 07:49:03, 自提,上门, 凉西省通达市翰棍揪路3240号绍阁小区17单元1913室, 0000-00-00 00:00:00
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31da6b2e]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31da6b2e]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31da6b2e]
+2019-07-10 21:35:23,046 [org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:139)]-[INFO] Rolled back transaction for test: [DefaultTestContext@57fae983 testClass = OrderControllerTest, testInstance = com.zjy.mmy.controller.OrderControllerTest@5e4fa1da, testMethod = updateTest@OrderControllerTest, testException = org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited, mergedContextConfiguration = [WebMergedContextConfiguration@4bee18dc testClass = OrderControllerTest, locations = '{classpath*:spring/*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+]]></system-out>
+  </testcase>
+  <testcase name="getByUserTest" classname="com.zjy.mmy.controller.OrderControllerTest" time="0.04">
+    <error message="Request processing failed; nested exception is org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column &apos;finished_date&apos; from result set.  Cause: java.sql.SQLException: Zero date value prohibited&#10;; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited" type="org.springframework.web.util.NestedServletException">org.springframework.web.util.NestedServletException: 
+Request processing failed; nested exception is org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByUserTest(OrderControllerTest.java:111)
+Caused by: org.springframework.dao.TransientDataAccessResourceException: 
+Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByUserTest(OrderControllerTest.java:111)
+Caused by: java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByUserTest(OrderControllerTest.java:111)
+Caused by: com.mysql.cj.exceptions.DataReadException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByUserTest(OrderControllerTest.java:111)
+</error>
+    <system-out><![CDATA[2019-07-10 21:35:23,049 [org.springframework.mock.web.MockServletContext.log(MockServletContext.java:444)]-[INFO] Initializing Spring TestDispatcherServlet ''
+2019-07-10 21:35:23,049 [org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:524)]-[INFO] Initializing Servlet ''
+2019-07-10 21:35:23,053 [org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:546)]-[INFO] Completed initialization in 3 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d746ce4] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@3e134896] will not be managed by Spring
+==>  Preparing: select * from `order` WHERE user_id=? order by created_date 
+==> Parameters: 16(Integer)
+<==    Columns: order_id, user_id, good_id, order_state, created_date, trade, addr, finished_date
+<==        Row: 16, 16, 112, COMPLETED, 2019-01-11 01:17:17, 自提,上门,面交, 晋邦省东安市赦醚路5084号楷帝小区18单元2208室, 0000-00-00 00:00:00
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d746ce4]
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zjy.mmy.mapper.UserMapper">
+    <resultMap id="UserResultMap" type="User">
+        <id property="userID" column="user_id" jdbcType="INTEGER"/>
+        <result property="openID" column="open_id" jdbcType="VARCHAR"/>
+        <result property="nickname" column="nickname" jdbcType="VARCHAR"/>
+        <result property="phone" column="phone" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <insert id="add" parameterType="User" useGeneratedKeys="true" keyProperty="userID">
+    insert into user(OPEN_ID, NICKNAME, PHONE) values (#{openID},#{nickname},#{phone})
+    </insert>
+
+    <update id="update" parameterType="User">
+update `user`
+    <set>
+        <if test="nickname != null">nickname=#{nickname},</if>
+        <if test="phone != null">phone=#{phone}</if>
+    </set>
+    where user_id=#{userID}
+    </update>
+
+    <delete id="delete">
+        delete from user where user_id=#{value}
+    </delete>
+
+    <select id="getByID" resultMap="UserResultMap">
+        select * from user where user_id=#{value}
+    </select>
+    <select id="getByOpenID" resultMap="UserResultMap">
+        select * from user where open_id=#{value}
+    </select>
+
+
+</mapper>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zjy.mmy.mapper.GoodMapper">
+    <resultMap id="GoodResultMap" type="Good">
+        <id property="goodID" column="good_id" jdbcType="INTEGER"/>
+        <result property="goodName" column="good_name" jdbcType="VARCHAR"/>
+        <result property="price" column="price" jdbcType="DECIMAL"/>
+        <result property="stock" column="stock" jdbcType="INTEGER"/>
+        <result property="detail" column="detail" jdbcType="VARCHAR"/>
+        <result property="date" column="date" jdbcType="TIMESTAMP"/>
+        <result property="trades" column="trades"
+                    typeHandler="com.zjy.mmy.mapper.typeHandler.TradeTypeHandler"/>
+        <association property="category" javaType="Category" column="category_id"
+                     select="com.zjy.mmy.mapper.CategoryMapper.getByID"/>
+        <association property="user" column="user_id" javaType="User"
+                     select="com.zjy.mmy.mapper.UserMapper.getByID"/>
+    </resultMap>
+
+    <insert id="add" parameterType="Good" useGeneratedKeys="true">
+        <selectKey keyProperty="goodID" order="AFTER" resultType="java.lang.Integer">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into good (good_name,user_id,price,stock,detail,trades,category_id,date)
+        values (#{goodName},#{user.userID},#{price},#{stock},#{detail},#{trades,typeHandler=com.zjy.mmy.mapper.typeHandler.TradeTypeHandler},#{category.id},#{date})
+    </insert>
+
+    <update id="update" parameterType="Good">
+        update good
+        <set>
+            <if test="goodName != null">good_name=#{goodName},</if>
+            <if test="price != null">price=#{price},</if>
+            <if test="stock != null">stock=#{stock},</if>
+            <if test="detail != null">detail=#{detail},</if>
+            <if test="trades != null">trades = #{trades,typeHandler=com.zjy.mmy.mapper.typeHandler.TradeTypeHandler},</if>
+            <if test="category != null">category_id=#{category.categoryID},</if>
+        </set>
+        where good_id = #{goodID}
+    </update>
+    <delete id="delete">
+        delete from good where good_id=#{value}
+    </delete>
+    <select id="getByID" resultMap="GoodResultMap">
+        select * from good where good_id=#{value}
+    </select>
+    <select id="getAll" resultMap="GoodResultMap">
+        select * from good
+    </select>
+    <select id="getList" resultMap="GoodResultMap" parameterType="Good">
+        select * from good
+        <where>
+            stock > 0
+            <if test="goodName != null and goodName != ''">and good_name=#{goodName}</if>
+            <if test="user != null and user.userID != null">and user_id=#{user.userID}</if>
+            <if test="trade != null">
+            and trades=#{trades,typeHandler=com.zjy.mmy.mapper.typeHandler.TradeTypeHandler}</if>
+            <if test="category != null and category.id != null">and category_id=#{category.categoryID}</if>
+
+        </where>
+    </select>
+    <select id="getByUser" resultMap="GoodResultMap" parameterType="integer" >
+        select * from good where user_id=#{userID}
+    </select>
+    <select id="searchGoods" resultType="com.zjy.mmy.domain.pojo.Good"
+            parameterType="com.zjy.mmy.controller.request.SearchGoodRequest">
+        SELECT * FROM good
+        <where>
+            <if test="nameLike != null and nameLike !=''">good_name like "%"#{nameLike}"%"</if>
+            <if test="categoryID != null">and category_id=#{categoryID}</if>
+            <if test="priceLt != null">and price &lt;=#{priceLt}</if>
+            <if test="priceMt != null">and price &gt;=#{priceMt}</if>
+            <if test="trades != null">
+                <foreach collection="trades" item="item">
+                and find_in_set(#{item}, trades)
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+</mapper>

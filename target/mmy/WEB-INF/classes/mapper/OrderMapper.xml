@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zjy.mmy.mapper.OrderMapper">
+    <resultMap id="OrderResultMap" type="Order">
+        <id property="orderID" column="order_id" jdbcType="INTEGER"/>
+        <result property="orderState" column="order_state"
+                typeHandler="org.apache.ibatis.type.EnumTypeHandler"/>
+        <result property="addr" column="addr" jdbcType="VARCHAR"/>
+        <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
+        <result property="finishedDate" column="finished_date" jdbcType="TIMESTAMP"/>
+        <result property="trade" column="trade"/>
+        <association property="good" column="good_id"
+                     select="com.zjy.mmy.mapper.GoodMapper.getByID"/>
+        <association property="user" column="user_id"
+                     select="com.zjy.mmy.mapper.UserMapper.getByID"/>
+    </resultMap>
+    
+    <insert id="add" useGeneratedKeys="true" parameterType="Order" keyProperty="orderID">
+<!--        <selectKey keyColumn="order_id" resultType="integer" order="AFTER">-->
+<!--            SELECT LAST_INSERT_ID()-->
+<!--        </selectKey>-->
+        insert into `order`
+        (user_id, good_id,order_state,created_date,trade,addr)
+        values
+        (#{user.userID},#{good.goodID},#{orderState,typeHandler=org.apache.ibatis.type.EnumTypeHandler},#{createdDate},#{trade},#{addr})
+    </insert>
+    <update id="update" parameterType="Order" keyProperty="orderID">
+        update `order` set
+        order_state=#{orderState,typeHandler=org.apache.ibatis.type.EnumTypeHandler},finished_date=#{finishedDate}
+        where order_id=#{orderID}
+    </update>
+    <delete id="delete" parameterType="integer">
+        delete from `order` where user_id=#{value}
+    </delete>
+    <select id="getByID" resultMap="OrderResultMap">
+        select * from `order` where order_id=#{value}
+    </select>
+    <select id="getByUser" resultMap="OrderResultMap">
+        select * from `order`
+        <where>
+            user_id=#{userID}
+            <if test="orderState.value != 0">and order_state = #{orderState,typeHandler=org.apache.ibatis.type.EnumTypeHandler}</if>
+        </where>
+        order by created_date
+    </select>
+
+</mapper>

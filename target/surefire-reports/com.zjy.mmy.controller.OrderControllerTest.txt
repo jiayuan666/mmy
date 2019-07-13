@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: com.zjy.mmy.controller.OrderControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.637 s <<< FAILURE! - in com.zjy.mmy.controller.OrderControllerTest
+addTest(com.zjy.mmy.controller.OrderControllerTest)  Time elapsed: 0.203 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.RuntimeException: good doesn't exist
+	at com.zjy.mmy.controller.OrderControllerTest.addTest(OrderControllerTest.java:55)
+Caused by: java.lang.RuntimeException: good doesn't exist
+	at com.zjy.mmy.controller.OrderControllerTest.addTest(OrderControllerTest.java:55)
+
+getByIDTest(com.zjy.mmy.controller.OrderControllerTest)  Time elapsed: 0.27 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: 
+Request processing failed; nested exception is org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByIDTest(OrderControllerTest.java:95)
+Caused by: org.springframework.dao.TransientDataAccessResourceException: 
+Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByIDTest(OrderControllerTest.java:95)
+Caused by: java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByIDTest(OrderControllerTest.java:95)
+Caused by: com.mysql.cj.exceptions.DataReadException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByIDTest(OrderControllerTest.java:95)
+
+updateTest(com.zjy.mmy.controller.OrderControllerTest)  Time elapsed: 0.118 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: 
+Request processing failed; nested exception is org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.updateTest(OrderControllerTest.java:79)
+Caused by: org.springframework.dao.TransientDataAccessResourceException: 
+Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.updateTest(OrderControllerTest.java:79)
+Caused by: java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.updateTest(OrderControllerTest.java:79)
+Caused by: com.mysql.cj.exceptions.DataReadException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.updateTest(OrderControllerTest.java:79)
+
+getByUserTest(com.zjy.mmy.controller.OrderControllerTest)  Time elapsed: 0.04 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: 
+Request processing failed; nested exception is org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByUserTest(OrderControllerTest.java:111)
+Caused by: org.springframework.dao.TransientDataAccessResourceException: 
+Error attempting to get column 'finished_date' from result set.  Cause: java.sql.SQLException: Zero date value prohibited
+; Zero date value prohibited; nested exception is java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByUserTest(OrderControllerTest.java:111)
+Caused by: java.sql.SQLException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByUserTest(OrderControllerTest.java:111)
+Caused by: com.mysql.cj.exceptions.DataReadException: Zero date value prohibited
+	at com.zjy.mmy.controller.OrderControllerTest.getByUserTest(OrderControllerTest.java:111)
+
